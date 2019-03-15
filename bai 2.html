@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doi so</title>
+</head>
+<body>
+<input type="text" id="myInput"/>
+<input type="button" value="Ket qua" onclick="Click()"/>
+<p id="view"></p>
+<script>
+    function check(num) {
+       let result = num +1;
+       return result;
+
+    }
+    function Click() {
+        let valueinput = parseFloat(document.getElementById('myInput').value);
+        document.getElementById("view").innerHTML = check(valueinput)
+    }
+
+
+</script>
+</body>
+</html>
